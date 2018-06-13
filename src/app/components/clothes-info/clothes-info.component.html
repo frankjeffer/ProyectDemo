@@ -1,0 +1,31 @@
+<div class="mb-2 border-bottom " style="padding-top: 15px; text-align: center">
+    <h1>Clothing</h1>
+</div>
+<div class="row">
+    <div class="col-md-4 tarjeta">
+      <div class="card">
+          <img class="img-responsive" src="assets/img/{{clothes[0].imagen}}">
+        </div>
+    </div>
+    <div class="col-md-8 tarjeta">
+      <div class="card">
+          <div class="card-header white-color text-center bg-primary">
+              <h3>{{clothes[0].nombre}}</h3>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title mb-2 border-bottom " style="padding-bottom: 10px">Informacion</h4>
+            <div>
+                  <h5 class="card-subtitle mb-2 text-muted">Tipo : </h5>
+                  <p class="card-text">{{clothes[0].tipo}}</p>
+                  <h5 class="card-subtitle mb-2 text-muted">Descripcion :</h5>
+                  <p class="card-text">{{clothes[0].descripcion}}</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div style="padding: 20px">
+        <ul class="pagination pagination-lg">
+            <li class="page-item"><a class="page-link" [routerLink]="['/clothes']">&larr; Volver</a></li>
+        </ul>
+    </div>
+</div>

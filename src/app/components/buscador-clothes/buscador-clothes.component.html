@@ -1,0 +1,16 @@
+<div class="mb-2 border-bottom " style="padding-top: 15px; text-align: center">
+    <h1>Clothing</h1>
+</div>
+<div class="alert alert-dismissible alert-warning" *ngIf="ropas.length == 0">
+    <a class="close" style="text-decoration: none" [routerLink]="['/clothes']">&times;</a>
+    <h4 class="alert-heading">Oops!</h4>
+    <p class="mb-0">no se encuentra lo que buscas :( ...</p>
+</div>
+<div class="row">
+  <div class="col-md-3 tarjeta " *ngFor="let ropa of ropas">
+    <div class="card">
+        <a [routerLink]="['/clothe',ropa.id]"><img class="img-responsive" src="assets/img/{{ropa.imagen}}"> </a>
+        <div class="card-header white-color text-center bg-primary">{{ropa.nombre}}</div>
+      </div>
+  </div>
+</div>
